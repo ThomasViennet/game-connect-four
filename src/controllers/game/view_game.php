@@ -8,7 +8,7 @@ namespace App\Controllers\Game\ViewGame;
 
 require_once('src/lib/database.php');
 require_once('src/models/game.php');
-require_once('src/controllers/game/endGame.php');
+require_once('src/controllers/game/end_game.php');
 
 use App\Controllers\Game\EndGame\EndGame;
 use App\Lib\Database\DatabaseConnection;
