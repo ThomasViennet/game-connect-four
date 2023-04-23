@@ -1,6 +1,7 @@
 # ConnectFour
 This is a Connect Four game in 2-player mode.
-I did this project to understand the MVC model
+
+I did this project to understand the MVC model.
 
 # How to Play ?
 1. Clone this repository
