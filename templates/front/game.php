@@ -37,7 +37,7 @@
         <br>
         <br>
         <select name="column-select" id="column-select">
-            <option value="">--Please choose a column--</option>
+            <option value="">Please choose a column</option>
             <option value="0">1</option>
             <option value="1">2</option>
             <option value="2">3</option>
@@ -52,8 +52,8 @@
         <label for="player-select">Choose a player:</label>
         <br>
         <br>
-        <input type="radio" id="id-player" name="id-player" value="1" checked><label for="id-player">Player 1</label>
-        <input type="radio" id="id-player" name="id-player" value="2"><label for="id-player">Player 2</label>
+        <input type="radio" id="id-player-1" name="id-player" value="1" checked><label for="id-player-1">Player 1</label>
+        <input type="radio" id="id-player-2" name="id-player" value="2"><label for="id-player-2">Player 2</label>
         <br>
         <br>
         <!-- Use this radio to restart a new game while waiting for the next features -->

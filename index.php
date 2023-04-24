@@ -1,4 +1,8 @@
 <?php
+declare(strict_types=1);
+require_once('vendor/autoload.php');
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 
 require_once('src/controllers/game/view_game.php');
 require_once('src/controllers/game/add_move.php');
@@ -13,7 +17,7 @@ try {
 
         case 'game':
             if (isset($_GET['id']) && $_GET['id'] > 0) {
-                $id = $_GET['id'];
+                $id = (int) $_GET['id'];
                 (new ViewGame())->execute($id);
             } else {
                 throw new Exception("ID's game $id doesn't exist");
@@ -21,7 +25,7 @@ try {
         break;
 
         case 'addMove':
-            (new AddMove())->execute($_POST['id_game'], $_POST['column-select']);
+            (new AddMove())->execute((int) $_POST['id_game'], $_POST['column-select']);
         break;
 
         default:
